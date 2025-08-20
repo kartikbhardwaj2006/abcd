@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - A.I.S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Contact page.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="navbar">
+            <div class="left-nav">
+                <button class="menu-button" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                    <span class="menu-text">Menu</span>
+                </button>
+                    <img src="assets/logo.jpg" alt="A.I.S Logo" class="logo-small">
+                </a>
+            </div>
+            <div></div> <!-- Empty div to maintain space-between layout -->
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="AI product page.html"><i class="fas fa-microchip"></i> AI Products</a></li>
+            <li><a href="Intership program page.html"><i class="fas fa-graduation-cap"></i> Internship Program</a></li>
+            <li><a href="Contact page.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="About Us page.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="container content-wrapper">
+        <div class="contact-container">
+            <div class="contact-header">
+                <div class="logo-container">
+                    <img src="assets/logo.jpg" alt="A.I.S Logo" class="logo-img">
+                </div>
+                <h1 class="contact-title">Contact Us</h1>
+                <p class="contact-subtitle">We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-body">
+                <div class="contact-info">
+                    <p class="contact-text">Have questions about our AI system or interested in learning more about how we can help transform your computing experience? Our team is here to assist you. Feel free to reach out to us via email or the contact form below.</p>
+                    
+                    <div class="email-container">
+                        <i class="fas fa-envelope email-icon"></i>
+                        <a href="mailto:a.n.i.s.intelligent.system@gmail.com" class="email-link">a.n.i.s.intelligent.system@gmail.com</a>
+                    </div>
+                    
+                    <p class="contact-text">If you have any query, please don't hesitate to contact us. We're always eager to discuss how our AI solutions can be tailored to meet your specific needs.</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    
+                    <form id="contactForm" onsubmit="return submitContactForm(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name *</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/anis-intelligent-system" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/ANIS_AI_System" target="_blank" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/anis_intelligent_system/" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            &copy; 2023 A.I.S - Artificial Intelligence System. All rights reserved.
+        </footer>
+    </div>
+    <script src="Contact page.js"></script>
+    
+</body>
+</html>
+<!-- End of Contact page HTML -->
